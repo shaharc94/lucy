@@ -1,0 +1,77 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fffaf6;
+  color: #333;
+  line-height: 1.8;
+}
+
+header {
+  background: #f8e1dc;
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #b25d5d;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.gallery .images {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background: #b25d5d;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #a94a4a;
+}
+
+footer {
+  background: #f1d9d1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
